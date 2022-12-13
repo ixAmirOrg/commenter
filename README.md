@@ -2,7 +2,7 @@
 This is a comment occupying bot for use in Telegram.
 #=========================< Commenter Bot >=========================#
 Edit Line :
-9 => Bot Token => You can get the token from the t.me/botfather
+9 => Bot Token => You can get the token from the [Bot Father](https://t.me/botfather)
 
 109 =>  numeric ID / user id Admin => You can get the token from the t.me/userinfoBot
 
