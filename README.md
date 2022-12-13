@@ -1,6 +1,6 @@
 # 🤖 Commenter Telegram Bot
 - 🔥This is a comment occupying bot for use in Telegram.
-- ⚡️ [click here for connect to author](https://t.me/ixAmir.com)
+- ⚡️ [click here for connect to author](https://t.me/ixAmircom)
 ## ⚙️Edit :
 
 Go to the <code> bot.php </code> file :
