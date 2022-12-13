@@ -1,9 +1,9 @@
 # 🤖 Commenter Telegram Bot
 - 🔥This is a comment occupying bot for use in Telegram.
 - ⚡️ [click here for connect to author](https://t.me/ixAmir.com)
-## config
+## Edit :
 
-Edit Line :
+Go to <p>bot.php<p> file :
 
 - 📌9 => *Bot Token* => You can get the token from the [Bot Father](https://t.me/botfather) 🤖
 
