@@ -3,7 +3,7 @@
 - ⚡️ [click here for connect to author](https://t.me/ixAmir.com)
 ## Edit :
 
-Go to <code> bot.php </code> file :
+Go to the <code> bot.php </code> file :
 
 - 📌9 => *Bot Token* => You can get the token from the [Bot Father](https://t.me/botfather) 🤖
 
@@ -11,7 +11,7 @@ Go to <code> bot.php </code> file :
 
 - 📌158 =>  *Media channel ID* 
 
-- 📌In the last step, do the setwebhook on the bot.php
+- 📌 Finally, do the setwebhook on the bot.php
 Be careful , because of the location of IP Range for the security of the robot; Setwebhook should be done like this :
 https://api.telegram.org/bot TOKEN /setwebhook?url= DOMAIN ?hash=okimking 🔗
 
