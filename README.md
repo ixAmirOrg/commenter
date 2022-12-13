@@ -5,7 +5,7 @@
 
 Go to the <code> bot.php </code> file :
 
-- 📌9 => *Bot Token* => You can get the token from the [Bot Father](https://t.me/botfather) 🤖
+- 📌9 => **Bot Token** => You can get the token from the [Bot Father](https://t.me/botfather) 🤖
 
 - 📌109 =>  *numeric ID / user id Admin* => You can get the token from the [User info](https://t.me/userinfoBot) 🤖
 
