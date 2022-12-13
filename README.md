@@ -12,5 +12,6 @@ Go to the <code> bot.php </code> file :
 - 📌158 =>  **Media channel ID** 
 
 - 📌 Finally, do the **setwebhook** on the bot.php
+
 Be careful , because of the location of IP Range for the security of the robot; Setwebhook should be done like this :
 https://api.telegram.org/bot TOKEN /setwebhook?url= DOMAIN ?hash=okimking 🔗
