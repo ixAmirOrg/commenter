@@ -3,7 +3,7 @@
 - ⚡️ [click here for connect to author](https://t.me/ixAmirCom)
 ## ⚙️Edit :
 
-Go to the <code> bot.php </code> file :
+Go to the ` bot.php ` file :
 
 - 📌9 => **Bot Token** => You can get the token from the [Bot Father](https://t.me/botfather) 🤖
 
