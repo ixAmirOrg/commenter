@@ -6,11 +6,10 @@
 
 به فایل ` bot.php ` بروید :
 
-- 📌9 => **توکن ربات** => شما می توانید نشانه را از [پدر ربات] (https://t.me/botfather) دریافت کنید 🤖
+- 📌9 => **توکن ربات** => شما می توانید توکن ربات خود را از [بات فادر](https://t.me/botfather) دریافت کنید 🤖
 
-- 📌109 =>  **numeric ID / user id Admin** => You can get the token from the [User info](https://t.me/userinfoBot) 🤖
+- 📌109 =>  **آیدی عددی** => شما میتوانید آیدی عددی اکانت خود را از [یوزر اینفو](https://t.me/userinfoBot) دریافت کنید🤖
+- 📌158 =>  **آیدی چنل رسانه** 
 
-- 📌158 =>  **Media channel ID** 
-
-- 📌 Finally, do the **setwebhook** on the bot.php. Be careful , because of the location of IP Range for the security of the robot; Setwebhook should be done like this :
-https://api.telegram.org/bot TOKEN /setwebhook?url= DOMAIN ?hash=okimking 🔗
+- 📌 و در مرحله ی آخر **setwebhook** را روی bot.php بزنید. دقت کنید که به دلیل نحوه ی قرارگیری IP Ranger برای امنیت ربات روش setwebhook با حالت عادی کمی فرق دارد. Setwebhook باید به این صورت انجام شود :
+https://api.telegram.org/bot توکن /setwebhook?url= دامین هاست ?hash=okimking 🔗
