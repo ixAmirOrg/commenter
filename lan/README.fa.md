@@ -13,4 +13,5 @@
  📌158 =>  **آیدی چنل رسانه** 
 
  📌 و در مرحله ی آخر **setwebhook** را روی bot.php بزنید. دقت کنید که به دلیل نحوه ی قرارگیری IP Ranger برای امنیت ربات روش setwebhook با حالت عادی کمی فرق دارد. Setwebhook باید به این صورت انجام شود :
+
 https://api.telegram.org/bot توکن /setwebhook?url= دامین هاست ?hash=okimking 🔗
