@@ -6,7 +6,7 @@ if (!isset($_GET['hash']) || $_GET['hash'] !== 'okimking') {
 ob_start();
 error_reporting(0);
 
-$token = '12345:Abcd';//Token
+$token = '1234';//Token
 define('API_KEY',$token);
 
 function request($method , $array = [],$token = API_KEY)
@@ -46,7 +46,7 @@ if(isset($update->message)){
     $chattype   = $message->chat->type;
 }else{
     $data = $update->callback_query->data;
-    $chat_id = $update->callback_query->chat->id;
+    $chat_id = $update->callback_query->message->chat->id;
     $from_id = $update->callback_query->from->id;
     $chattype   = $update->callback_query->chat->type;
     $message_id  = $update->callback_query->message->message_id;
@@ -78,7 +78,7 @@ $key = json_encode([
 if (strtolower($text) == '/start' and $chattype == 'private'){
   $key = json_encode([
         'inline_keyboard'=>[
-         [['text'=>"🚀 افزودن ربات به گروه",'url'=>"https://t.me/Comaval_robot?startgroup=new"]],
+         [['text'=>"🚀 افزودن ربات به گروه",'url'=>"https://t.me/ComAvalBot?startgroup=new"]],
          [['text'=>"📣 کانال آپدیت ها",'url'=>"https://t.me/Texo_Tm"],['text'=>"🌊 گروه پشتیبانی",'url'=>"https://t.me/TexoGap"]],
          [['text'=>"📄 راهنما",'callback_data'=>"help"]],
          ]
@@ -90,11 +90,12 @@ request('editMessageText',[
 'chat_id'=>$from_id,
 'message_id'=>$message_id,
 'text'=>"تست",
-  $key = json_encode([
+'reply_markup'=> json_encode([
         'inline_keyboard' => [
           [['text' => 'بازگشت','callback_data' => 'back']],
           ]
-      ]);
+          ])
+          ]);
 }
 if($update->message->new_chat_member->id == 1877929601){
 	sm("−◾️┈┅━ ربات با موفقیت نصب شد👌
@@ -106,7 +107,7 @@ if($update->message->new_chat_member->id == 1877929601){
 ┈┅━━━━┅┈ ┈┅━━━━┅┈
 −◾️┈┅━ موفق باشید کاربر عزیز🤝");
     request('sendmessage',[
-        'chat_id' => 2018083464, //User id Admin
+        'chat_id' => 5103113068, //User id Admin
         'text'    => 'یک کاربر جدید ربات را نصب کرد'
         ]);
     if (!is_dir("data/$chat_id")){
@@ -138,6 +139,8 @@ else if (strpos($data,'set|') !== false  and is_admin($from_id,$chat_id)){
     if ($ex == 'gif'){
         $type =  'گیف';
     }
+    
+    mkdir("data/$chat_id");
     file_put_contents("data/$chat_id/type.txt",$type);
     editmessage($message_id,"✅ با موفقیت تنظیم شد\n\n🌟 نوع فعلی : $type",$key);
 }
@@ -176,3 +179,25 @@ if ($file == 'پنج تکست'){
    }
   }
 }
+if($data=="back"){
+    request('editMessageText',[
+    'chat_id'=>$from_id,
+    'message_id'=>$message_id,
+    'text'=>"سلام🙋🏻‍♂️
+
+    به ربات کامنت گیر ما خیلی خوش اومدی😁❤️
+    
+    با ربات ما میتونی همیشه کامنت اول چنلتو امن نگه داری😃👌
+    
+    چرا معطلی ؟😳
+    
+    همین الان ربات رو از طریق دکمه ی اضافه کردن به گروه به گروهت دعوت کن😍",
+    'reply_markup'=>json_encode([
+            'inline_keyboard'=>[
+             [['text'=>"🚀 افزودن ربات به گروه",'url'=>"https://t.me/ComAvalBot?startgroup=new"]],
+             [['text'=>"📣 کانال آپدیت ها",'url'=>"https://t.me/Texo_Tm"],['text'=>"🌊 گروه پشتیبانی",'url'=>"https://t.me/TexoGap"]],
+             [['text'=>"📄 راهنما",'callback_data'=>"help"]],
+             ]
+             ])
+          ]);
+        }
